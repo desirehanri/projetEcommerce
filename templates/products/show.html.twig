@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ product.name }}{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-4">
+            <img src="/uploads/{{ product.illustration }}" alt="{{ product.name }}" class="w-100">
+        </div>
+        <div class="col-md-8">
+            <h1>{{ product.name }}</h1>
+            <p>{{ product.description }}</p>
+            <hr>
+            <p>Prix : {{ (product.price /100)|number_format(2 , ',', '.') }} MGA</p>
+            <a href="{{ path('add_to_cart',{'id' : product.id}) }}" class="btn btn-outline-primary"> Ajouter au panier </a>
+        </div>
+    </div>
+
+
+{% endblock %}

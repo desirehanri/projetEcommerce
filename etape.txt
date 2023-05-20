@@ -1,0 +1,22 @@
+1- Creation controller après code twig générer automatiquement dans dossier templates
+2- Creation entité : code FileRepository dans le dossier Repository généré automatiquement (ORM) [User.php et UserRepository.php]
+        REPOSITORY : permet d'acceder a mes donnees de maniere plus rapide
+3- creation Formulaire register : associé a l'entité  générer automatiquement dans dossier templates
+5- Authentification : LoginFormAuthenticator daUser.php
+4- Creation du RegisterController après code twigns dossier src/Security, twig login dans templates/security
+6- Creation controller pour les membres : vue pour utilisateurs
+7- Modification d'un mot de passe
+
+8- Easy Admin : composer require easycorp/easyadmin-bundle 
+    Creation entite Genre, migration ,Mapping vers easy admin
+    Creation entite Products, migration ,Mapping vers easy admin
+9- Vue pour les clients : Creation de l'entite ProductsController pour afficher les produits (index.twig.html et show.twig.html)
+10-Creation barre de filtre pour filtrer nos produits
+    Creation objet de recherche : création de dossier Classe dans src et du fichier : Search.php (objet de recherche pour nos produits)
+    Requete permettant de recuperer les produits en fonction de la recherche de l'utilisateur : ProductRepository
+    Recap :
+        - Création de class Search.php : pour representer mon objet de recherche effeectuer par l'user
+        - Création de SearchType.php : lier avec Search.php
+11- Ajoutez au panier : Systeme de session
+    Panier : Association entre un identifiant et une quantité
+12- Création de Cart et CartController
